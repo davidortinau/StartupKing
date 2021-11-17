@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:app="clr-namespace:ControlGallery"
+             xmlns:compat="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
+             Title="King Page"
+             x:Class="StartupKing.Pages.KingPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <ScrollView>
+                <StackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+                    <Label Text="Default" StyleClass="Headline"/>
+                    <Label Text="IsRunning" StyleClass="Subhead"/>
+                    <Label Text="IsRunning" StyleClass="Subhead"/>
+                    <ActivityIndicator IsRunning="True" />
+
+                    <Label Text="Styled" StyleClass="Headline"/>
+                    <Label Text="Color" StyleClass="Subhead"/>
+                    <ActivityIndicator IsRunning="True" Color="{StaticResource Primary}" />
+                </StackLayout>
+            </ScrollView>
+
+
+            <ScrollView>
+                <StackLayout Margin="{OnPlatform iOS='30,60,30,30', Default='30'}">
+                    <Label x:Name="CurrentThemeLabel"
+                    Text="{Binding CurrentTheme}" 
+                    StyleClass="Headline"/>
+                    <Button Text="Change Theme"
+                />
+                    <BoxView StyleClass="HRule"/>
+
+                    <ActivityIndicator IsRunning="True" />
+
+                    <Label Text="App Text Styles"
+                       StyleClass="Headline" />
+                    <BoxView StyleClass="HRule"/>
+
+                    <Label Text="Large Title"
+                       StyleClass="LargeTitle"/>
+                    <Label Text="30px, OpenSansSemiBold, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Title 1"
+                       StyleClass="Title1"/>
+                    <Label Text="26px, OpenSansSemiBold, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Headline"
+                       StyleClass="Headline"/>
+                    <Label Text="17px, OpenSansSemiBold, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Body"/>
+                    <Label Text="17px, OpenSansRegular, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Subhead"
+                       StyleClass="Subhead"/>
+                    <Label Text="15px, OpenSansRegular, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Footnote"
+                       StyleClass="Footnote"/>
+                    <Label Text="13px, OpenSansRegular, #000000" 
+                       StyleClass="TypographyMeta"/>
+
+                    <Label Text="Text Color Styles"
+                       StyleClass="Headline" />
+                    <BoxView StyleClass="HRule"/>
+                    <Label Text="Regular"/>
+                    <Label Text="Secondary" StyleClass="Secondary"/>
+                    <Label Text="Error" StyleClass="Error"/>
+                    <Label Text="Warning" StyleClass="Warning"/>
+                    <Label Text="Disabled" StyleClass="Disabled"/>
+
+                    <Label Text="Default Styles"
+                       StyleClass="Headline" />
+                    <BoxView StyleClass="HRule"/>
+                    <Label Text="TitleStyle" Style="{DynamicResource TitleStyle}"/>
+                    <Label Text="SubtitleStyle" Style="{DynamicResource SubtitleStyle}"/>
+                    <Label Text="BodyStyle" Style="{DynamicResource BodyStyle}"/>
+                    <Label Text="CaptionStyle" Style="{DynamicResource CaptionStyle}"/>
+                    <Label Text="ListItemTextStyle" Style="{DynamicResource ListItemTextStyle}"/>
+                    <Label Text="ListItemDetailTextStyle" Style="{DynamicResource ListItemDetailTextStyle}"/>
+
+
+
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Margin="0,60,0,0">
+                <StackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30,90'}">
+                    <Label Text="Primary filled"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Button"/>
+                        <Button Text="Button" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button ImageSource="{StaticResource CircleIcon}" Text="Button"/>
+                        <Button ImageSource="{StaticResource CircleIcon}" Text="Button" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button FontFamily="FontAwesome"
+                            Text="{x:Static app:IconFont.Archway}"/>
+                        <Button FontFamily="FontAwesome"
+                            Text="{x:Static app:IconFont.Archway}"
+                            IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="Primary outline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Button" Style="{StaticResource PrimaryButtonOutline}"/>
+                        <Button Text="Button" IsEnabled="False" Style="{StaticResource PrimaryButtonOutline}"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button ImageSource="{StaticResource CircleIconAlt}" Text="Button" Style="{StaticResource PrimaryButtonOutlineIcon}"/>
+                        <Button ImageSource="{StaticResource CircleIconAlt}" Text="Button" IsEnabled="False" Style="{StaticResource PrimaryButtonOutlineIcon}"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button ImageSource="{StaticResource CircleIconAlt}" Style="{StaticResource PrimaryButtonOutlineIcon}"/>
+                        <Button ImageSource="{StaticResource CircleIconAlt}" IsEnabled="False" Style="{StaticResource PrimaryButtonOutlineIcon}"/>
+                    </StackLayout>
+
+                    <Label Text="Secondary outline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Button" Style="{StaticResource SecondaryButtonOutline}"/>
+                        <Button Text="Button" IsEnabled="False" Style="{StaticResource SecondaryButtonOutline}"/>
+                    </StackLayout>
+
+                    <Label Text="Teriary outline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Button" Style="{StaticResource TertiaryButtonOutline}"/>
+                        <Button Text="Button" IsEnabled="False" Style="{StaticResource TertiaryButtonOutline}"/>
+                    </StackLayout>
+
+                    <Label Text="Borderless"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Button" Style="{StaticResource BorderlessButton}"/>
+                        <Button Text="Button" IsEnabled="False" Style="{StaticResource BorderlessButton}"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" StyleClass="Headline"/>
+                    <StackLayout StyleClass="CheckBoxContainer">
+                        <CheckBox/>
+                        <Label Text="Unchecked" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout StyleClass="CheckBoxContainer">
+                        <CheckBox IsChecked="True"/>
+                        <Label Text="Checked" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout StyleClass="CheckBoxContainer">
+                        <CheckBox IsEnabled="False"/>
+                        <Label Text="Disabled" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout StyleClass="CheckBoxContainer">
+                        <CheckBox IsEnabled="False" IsChecked="True"/>
+                        <Label Text="Disabled checked" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <Label Text="Styling" StyleClass="Headline"/>
+                    <StackLayout StyleClass="CheckBoxContainer">
+                        <CheckBox Color="{StaticResource Accent}"/>
+                        <Label Text="Accent" VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" StyleClass="Headline"/>
+                    <Editor/>
+
+                    <Label Text="Placeholder" StyleClass="Headline"/>
+                    <Editor Placeholder="Placeholder"/>
+
+                    <Label Text="Disabled" StyleClass="Headline"/>
+                    <Editor Text="I am disabled" IsEnabled="False"/>
+
+                    <Label Text="Read-only" StyleClass="Headline"/>
+                    <Editor Text="I am read only" IsReadOnly="True"/>
+
+
+
+
+                    <Label Text="With error message" StyleClass="Headline"/>
+                    <Editor />
+
+                    <Label Text="Multiline" StyleClass="Headline"/>
+                    <Label Text="AutoSize" StyleClass="Subhead"/>
+                    <Editor Placeholder="Placeholder" AutoSize="TextChanges"/>
+
+                    <Label Text="Fixed Height" StyleClass="Subhead"/>
+                    <Editor Placeholder="Placeholder" HeightRequest="200"/>
+
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Basic" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry/>
+                        <Entry IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="With Placeholder" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Placeholder"/>
+                        <Entry Placeholder="Placeholder color" PlaceholderColor="{StaticResource Accent}"/>
+                        <Entry Placeholder="Placeholder" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="Password" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry IsPassword="True" />
+                        <Entry IsPassword="True" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="With Text" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="Text"/>
+                        <Entry Text="Text Color" TextColor="{StaticResource Accent}"/>
+                        <Entry Text="Text" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="Read-only" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="I am read only" IsReadOnly="True"/>
+                    </StackLayout>
+
+                    <Label Text="With Purple Background" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Placeholder" 
+                       Background="{StaticResource Tertiary}"/>
+                        <Entry Placeholder="Placeholder" IsEnabled="False"
+                       Background="{StaticResource Tertiary}"/>
+                    </StackLayout>
+
+                    <Label Text="Community Toolkit Helpers" StyleClass="Headline"/>
+                    <Label Text="With error message" StyleClass="Subhead" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="" />
+                    </StackLayout>
+
+                    <Label Text="Input mask" StyleClass="Subhead" />
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Text Styles"
+                       StyleClass="Headline"
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label Text="Large Title is Bold 30"
+                       StyleClass="LargeTitle"/>
+                    <Label Text="Title 1 is Bold 26"
+                       StyleClass="Title1"/>
+                    <Label Text="Headline is Bold 17"
+                       StyleClass="Headline"/>
+                    <Label Text="Body is Regular 17"/>
+                    <Label Text="Subhead is Regular 15"
+                       StyleClass="Subhead"/>
+                    <Label Text="Footnote is Regular 13"
+                       StyleClass="Footnote"/>
+
+                    <Label Text="Text Color Styles"
+                       StyleClass="Headline"
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label Text="Regular"/>
+                    <Label Text="Secondary" StyleClass="Secondary"/>
+                    <Label Text="Error" StyleClass="Error"/>
+                    <Label Text="Warning" StyleClass="Warning"/>
+                    <Label Text="Disabled" StyleClass="Disabled"/>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" StyleClass="Headline"/>
+
+                    <ProgressBar Progress="0.5"/>
+                    <ProgressBar x:Name="progressBar" Progress="{Binding Progress}"/>
+
+                    <Label Text="Styled" StyleClass="Headline"/>
+
+                    <Label Text="HeightRequest" StyleClass="Subhead"/>
+                    <ProgressBar HeightRequest="20" Progress="0.2"/>
+
+                    <Label Text="ProgressColor" StyleClass="Subhead"/>
+                    <ProgressBar HeightRequest="20" Progress="0.3" ProgressColor="{StaticResource Primary}"/>
+
+                    <Label Text="BackgroundColor" StyleClass="Subhead"/>
+                    <ProgressBar HeightRequest="20" 
+                             Progress="0.4" 
+                             BackgroundColor="{StaticResource Secondary}"
+                             ProgressColor="{StaticResource Primary}"/>
+                </StackLayout>
+            </ScrollView>
+<!--
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="On" StyleClass="Headline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <RadioButton Content="RadioButton" IsChecked="True" />
+                        <RadioButton Content="RadioButton" IsChecked="True" IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="Off" StyleClass="Headline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <RadioButton Content="RadioButton" IsChecked="False" />
+                        <RadioButton Content="RadioButton" IsChecked="False" IsEnabled="False"/>
+                    </StackLayout>
+
+
+                    <Label Text="RadioButtonGroup" StyleClass="Headline" />
+                    <StackLayout Orientation="Horizontal" RadioButtonGroup.GroupName="Colors">
+                        <RadioButton Content="Red" IsChecked="True"/>
+                        <RadioButton Content="Green" />
+                        <RadioButton Content="Blue" />
+                    </StackLayout>
+
+                    <Label Text="RadioButton ContentTemplate" StyleClass="Headline"/>
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        BindableLayout.ItemsSource="{Binding QualityOptions}"
+                        RadioButtonGroup.GroupName="Quality"
+                        RadioButtonGroup.SelectedValue="High"
+                        >
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <RadioButton StyleClass="ImageQuality">
+                                    <RadioButton.Content>
+                                        <StackLayout
+                                      HorizontalOptions="Center"
+                                      VerticalOptions="Center">
+                                            <Image
+                                            Source="{FontImage FontFamily=FontAwesome, 
+                                                Glyph={x:Static app:IconFont.Image}, 
+                                                Color=#323130}"
+                                            Scale="0.75" />
+                                            <Label HorizontalOptions="FillAndExpand"
+                                                HeightRequest="40"
+                                               Text="{Binding Description}"
+                                                TextColor="#323130" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+-->
+            <StackLayout>
+                <Label Text="Default" StyleClass="Headline"/>
+                <Slider/>
+
+                <Label Text="MinimumTrackColor" StyleClass="Headline"/>
+                <Slider MinimumTrackColor="{StaticResource Neutral}" Value="0.5"/>
+
+                <Label Text="MaximumTrackColor" StyleClass="Headline"/>
+                <Slider MaximumTrackColor="{StaticResource Neutral}" Value="0.5"/>
+
+                <Label Text="ThumbColor" StyleClass="Headline"/>
+                <Slider ThumbColor="{StaticResource Primary}" Value="0.5"/>
+            </StackLayout>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" StyleClass="Headline"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Stepper/>
+                        <Stepper IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="Styled" StyleClass="Headline"/>
+
+                    <Label Text="BackgroundColor" StyleClass="Subhead"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Stepper BackgroundColor="{StaticResource Secondary}"/>
+                        <Stepper BackgroundColor="{StaticResource Secondary}" 
+                             IsEnabled="False"/>
+                    </StackLayout>
+
+                    <Label Text="BackgroundColor" StyleClass="Subhead"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Stepper Increment="2"/>
+                        <Stepper BackgroundColor="{StaticResource Secondary}" 
+                             IsEnabled="False"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" StyleClass="Headline"/>
+                    <Label Text="Enabled and untoggled" StyleClass="Subhead"/>
+                    <Switch/>
+
+                    <Label Text="Enabled and toggled" StyleClass="Subhead"/>
+                    <Switch IsToggled="True"/>
+
+                    <Label Text="Disabled and untoggled" StyleClass="Subhead"/>
+                    <Switch IsEnabled="False"/>
+
+                    <Label Text="Disabled and toggled" StyleClass="Subhead"/>
+                    <Switch IsToggled="True" IsEnabled="False"/>
+
+                    <Label Text="Styled" StyleClass="Headline"/>
+                    <Label Text="OnColor" StyleClass="Subhead"/>
+                    <Switch IsToggled="True" OnColor="{StaticResource Accent}"/>
+
+                    <Label Text="ThumbColor" StyleClass="Subhead"/>
+                    <Switch IsToggled="True" ThumbColor="{StaticResource Accent}" />
+
+                </StackLayout>
+            </ScrollView>
+
+            <compat:AbsoluteLayout>
+                <Label x:Name="label1"
+               Text="Bouncing text"
+               FontSize="Large"
+               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Label x:Name="label3"
+               Text="Bouncing text"
+               FontSize="Large"
+               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </compat:AbsoluteLayout>
+
+            <ContentView Margin="20">
+                <compat:AbsoluteLayout x:Name="absoluteLayout"
+                        BackgroundColor="WhiteSmoke"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.00, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.14, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.14, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.14, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.14, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.29, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.29, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.29, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.29, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.43, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.43, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.43, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.43, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.57, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.57, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.57, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.57, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.71, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.71, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.71, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.71, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.86, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.86, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.86, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.86, 0.125, 0.125" />
+
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 1.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 1.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 1.00, 0.125, 0.125" />
+                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 1.00, 0.125, 0.125" />
+                </compat:AbsoluteLayout>
+            </ContentView>
+
+            <compat:AbsoluteLayout>
+                <BoxView Color="Blue"
+                 compat:AbsoluteLayout.LayoutBounds="0.5,0,100,25"
+                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <BoxView Color="Green"
+                 compat:AbsoluteLayout.LayoutBounds="0,0.5,25,100"
+                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <BoxView Color="Red"
+                 compat:AbsoluteLayout.LayoutBounds="1,0.5,25,100"
+                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <BoxView Color="Black"
+                 compat:AbsoluteLayout.LayoutBounds="0.5,1,100,25"
+                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Label Text="Centered text"
+               compat:AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </compat:AbsoluteLayout>
+
+            <compat:AbsoluteLayout>
+                <StackLayout Margin="20"
+                     compat:AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     compat:AbsoluteLayout.LayoutFlags="All">
+                    <Label Text="This might be a page of UI objects except that the only functional UI object on the page is a Button." />
+                    <Button Text="Simulate 5-second work item"/>
+                </StackLayout>
+
+                <!-- Overlay -->
+                <ContentView x:Name="overlay"
+                     compat:AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     compat:AbsoluteLayout.LayoutFlags="All"
+                     BackgroundColor="#C0808080"
+                     IsVisible="False">
+                    <ProgressBar
+                         Margin="20"
+                         VerticalOptions="Center" />
+
+                </ContentView>
+            </compat:AbsoluteLayout>
+
+            <compat:AbsoluteLayout Margin="20">
+                <BoxView Color="Silver"
+                 compat:AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
+                <BoxView Color="Silver"
+                 compat:AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
+                <BoxView Color="Silver"
+                 compat:AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
+                <BoxView Color="Silver"
+                 compat:AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
+                <Label Text="Stylish Header"
+               FontSize="24"
+               compat:AbsoluteLayout.LayoutBounds="30, 25" />
+
+                <Label compat:AbsoluteLayout.LayoutBounds="0, 80">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Although " />
+                            <Span Text="AbsoluteLayout"
+                          FontAttributes="Italic" />
+                            <Span Text=" is usually employed for purposes other than the display of text using " />
+                            <Span Text="Label"
+                          FontAttributes="Italic" />
+                            <Span Text=", obviously it can be used in that way. The text continues to wrap nicely within the bounds of the container and any margin that might be applied." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </compat:AbsoluteLayout>
+
+            <Grid Margin="10, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Control Panel -->
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="VerticalOptions" Value="Center" />
+                        </Style>
+
+                        <Style TargetType="StackLayout">
+                            <Setter Property="Orientation" Value="Horizontal" />
+                            <Setter Property="HorizontalOptions" Value="Center" />
+                        </Style>
+                    </Grid.Resources>
+
+                    <!-- Controls for Label 2 -->
+                    <Label Text="Label 2:"
+                   Grid.Row="0" Grid.Column="0" />
+
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+
+                        <Label Text="Auto" />
+
+                        <Switch x:Name="autoSwitch2"
+                        IsToggled="True" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="0" Grid.Column="2">
+                        <Label Text="Is Relative"
+                        />
+
+                        <Switch x:Name="relativeSwitch2"
+                        IsToggled="True"
+                        />
+                    </StackLayout>
+
+                    <Slider x:Name="slider2"
+                    Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                    />
+
+                    <Label Text="value"
+                   Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                    />
+
+                    <!-- Controls for Label 4 -->
+                    <Label Text="Label 4:"
+                   Grid.Row="3" Grid.Column="0" />
+
+                    <StackLayout Grid.Row="3" Grid.Column="1">
+
+                        <Label Text="Auto" />
+
+                        <Switch x:Name="autoSwitch4"
+                        IsToggled="True" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="2">
+                        <Label Text="Is Relative"
+                        />
+
+                        <Switch x:Name="relativeSwitch4"
+                        IsToggled="True"
+                         />
+                    </StackLayout>
+
+                    <Slider x:Name="slider4"
+                    Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                     />
+
+                    <Label Text="value"
+                   Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                    />
+                </Grid>
+
+                <!-- FlexLayout -->
+                <FlexLayout Grid.Row="1"
+                    Direction="Column"
+                    Wrap="Wrap"
+                    BackgroundColor="AliceBlue">
+
+                    <Label Text="Label 1"
+                   TextColor="Blue"
+                   BackgroundColor="Pink" />
+
+                    <Label x:Name="label2"
+                   Text="Label 2"
+                   TextColor="Red"
+                   BackgroundColor="Cyan" />
+
+                    <Label Text="Label 3"
+                   TextColor="Blue"
+                   BackgroundColor="Pink" />
+
+                    <Label x:Name="label4"
+                   Text="Label 4"
+                   TextColor="Red"
+                   BackgroundColor="Cyan" />
+
+                    <Label Text="Label 5"
+                   TextColor="Blue"
+                   BackgroundColor="Pink" />
+                </FlexLayout>
+            </Grid>
+
+            <FlexLayout Direction="Column">
+
+                <!-- Header -->
+                <Label Text="HEADER"
+               FontSize="Large"
+               BackgroundColor="Aqua"
+               HorizontalTextAlignment="Center" />
+
+                <!-- Body -->
+                <FlexLayout FlexLayout.Grow="1">
+
+                    <!-- Content -->
+                    <Label Text="CONTENT"
+                   FontSize="Large"
+                   BackgroundColor="Gray"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FlexLayout.Grow="1" />
+
+                    <!-- Navigation items-->
+                    <BoxView FlexLayout.Basis="50"
+                     FlexLayout.Order="-1"
+                     Color="Blue" />
+
+                    <!-- Aside items -->
+                    <BoxView FlexLayout.Basis="50"
+                     Color="Green" />
+
+                </FlexLayout>
+
+                <!-- Footer -->
+                <Label Text="FOOTER"
+               FontSize="Large"
+               BackgroundColor="Pink"
+               HorizontalTextAlignment="Center" />
+            </FlexLayout>
+
+            <compat:RelativeLayout>
+                <!-- Four BoxView's -->
+                <BoxView Color="Red"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" 
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" />
+                <BoxView Color="Green"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-40}"
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" />
+                <BoxView Color="Blue"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}"
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-40}" />
+                <BoxView Color="Yellow"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-40}"
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-40}" />
+
+                <!-- Centered and 1/3 width and height of parent -->
+                <BoxView x:Name="oneThird" 
+                 Color="Silver"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}" 
+                 compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
+                 compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}" />
+
+                <!-- 1/3 width and height of previous -->
+                <BoxView Color="Black"
+                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=X}"
+                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Y}"
+                 compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Width, Factor=0.33}"
+                 compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Height, Factor=0.33}" />
+            </compat:RelativeLayout>
+
+            <compat:RelativeLayout>
+                <StackLayout Margin="20">
+                    <Label Text="This might be a page of UI objects except that the only functional UI object on the page is a Button." />
+                    <Button Text="Simulate 5-second work item" />
+                </StackLayout>
+
+                <!-- Overlay -->
+                <ContentView x:Name="overlay2"
+                     BackgroundColor="#C0808080"
+                     IsVisible="False"
+                     compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                     compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                    <ProgressBar x:Name="progressBar2"
+                         Margin="20"
+                         VerticalOptions="Center" />
+                </ContentView>
+            </compat:RelativeLayout>
+
+            <compat:RelativeLayout Margin="20">
+                <BoxView Color="Silver"
+                 compat:RelativeLayout.XConstraint="0"
+                 compat:RelativeLayout.YConstraint="10"
+                 compat:RelativeLayout.WidthConstraint="200"
+                 compat:RelativeLayout.HeightConstraint="5" />
+                <BoxView Color="Silver"
+                 compat:RelativeLayout.XConstraint="0"
+                 compat:RelativeLayout.YConstraint="20"
+                 compat:RelativeLayout.WidthConstraint="200"
+                 compat:RelativeLayout.HeightConstraint="5" />
+                <BoxView Color="Silver"
+                 compat:RelativeLayout.XConstraint="10"
+                 compat:RelativeLayout.YConstraint="0"
+                 compat:RelativeLayout.WidthConstraint="5"
+                 compat:RelativeLayout.HeightConstraint="65" />
+                <BoxView Color="Silver"
+                 compat:RelativeLayout.XConstraint="20"
+                 compat:RelativeLayout.YConstraint="0"
+                 compat:RelativeLayout.WidthConstraint="5"
+                 compat:RelativeLayout.HeightConstraint="65" />
+                <Label Text="Stylish header"
+               FontSize="24"
+               compat:RelativeLayout.XConstraint="30"
+               compat:RelativeLayout.YConstraint="25" />
+                <Label compat:RelativeLayout.XConstraint="0"
+               compat:RelativeLayout.YConstraint="80">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Although " />
+                            <Span Text="RelativeLayout"
+                          FontAttributes="Italic" />
+                            <Span Text=" is usually employed for purposes other than the display of text using a " />
+                            <Span Text="Label"
+                          FontAttributes="Italic" />
+                            <Span Text=", obviously it can be used in that way. The text continues to wrap nicely within the bounds of the container and any margin that might be applied." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </compat:RelativeLayout>
+            
+            <!-- XCT -->
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

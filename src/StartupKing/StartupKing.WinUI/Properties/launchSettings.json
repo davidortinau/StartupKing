@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StartupKing.WinUI": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  }
+}
