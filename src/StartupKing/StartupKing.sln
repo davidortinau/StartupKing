@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupKing", "StartupKing\StartupKing.csproj", "{3E703EC5-975E-449B-BCD9-36E3FBB46097}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupKing.WinUI", "StartupKing.WinUI\StartupKing.WinUI.csproj", "{F52250DC-2D1D-4852-8C62-D43915AF4BCB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
