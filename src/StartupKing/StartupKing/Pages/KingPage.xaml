@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:app="clr-namespace:ControlGallery"
-             xmlns:compat="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
              Title="King Page"
              x:Class="StartupKing.Pages.KingPage">
     <ContentPage.Content>
@@ -436,94 +435,94 @@
                 </StackLayout>
             </ScrollView>
 
-            <compat:AbsoluteLayout>
+            <AbsoluteLayout>
                 <Label x:Name="label1"
                Text="Bouncing text"
                FontSize="Large"
-               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <Label x:Name="label3"
                Text="Bouncing text"
                FontSize="Large"
-               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
-            </compat:AbsoluteLayout>
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
 
             <ContentView Margin="20">
-                <compat:AbsoluteLayout x:Name="absoluteLayout"
+                <AbsoluteLayout x:Name="absoluteLayout"
                         BackgroundColor="WhiteSmoke"
                         HorizontalOptions="Center"
                         VerticalOptions="Center">
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.00, 0.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.29, 0.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.57, 0.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.86, 0.00, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.14, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.14, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.14, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.14, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.14, 0.14, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.43, 0.14, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.71, 0.14, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="1.00, 0.14, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.29, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.29, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.29, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.29, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.00, 0.29, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.29, 0.29, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.57, 0.29, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.86, 0.29, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.43, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.43, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.43, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.43, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.14, 0.43, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.43, 0.43, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.71, 0.43, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="1.00, 0.43, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.57, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.57, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.57, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.57, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.00, 0.57, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.29, 0.57, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.57, 0.57, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.86, 0.57, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 0.71, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 0.71, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 0.71, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 0.71, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.14, 0.71, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.43, 0.71, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.71, 0.71, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="1.00, 0.71, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.00, 0.86, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.29, 0.86, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.57, 0.86, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.86, 0.86, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.00, 0.86, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.29, 0.86, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.57, 0.86, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.86, 0.86, 0.125, 0.125" />
 
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.14, 1.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.43, 1.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="0.71, 1.00, 0.125, 0.125" />
-                    <BoxView compat:AbsoluteLayout.LayoutBounds="1.00, 1.00, 0.125, 0.125" />
-                </compat:AbsoluteLayout>
+                    <BoxView AbsoluteLayout.LayoutBounds="0.14, 1.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.43, 1.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="0.71, 1.00, 0.125, 0.125" />
+                    <BoxView AbsoluteLayout.LayoutBounds="1.00, 1.00, 0.125, 0.125" />
+                </AbsoluteLayout>
             </ContentView>
 
-            <compat:AbsoluteLayout>
+            <AbsoluteLayout>
                 <BoxView Color="Blue"
-                 compat:AbsoluteLayout.LayoutBounds="0.5,0,100,25"
-                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                 AbsoluteLayout.LayoutBounds="0.5,0,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <BoxView Color="Green"
-                 compat:AbsoluteLayout.LayoutBounds="0,0.5,25,100"
-                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                 AbsoluteLayout.LayoutBounds="0,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <BoxView Color="Red"
-                 compat:AbsoluteLayout.LayoutBounds="1,0.5,25,100"
-                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                 AbsoluteLayout.LayoutBounds="1,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <BoxView Color="Black"
-                 compat:AbsoluteLayout.LayoutBounds="0.5,1,100,25"
-                 compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
+                 AbsoluteLayout.LayoutBounds="0.5,1,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <Label Text="Centered text"
-               compat:AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
-               compat:AbsoluteLayout.LayoutFlags="PositionProportional" />
-            </compat:AbsoluteLayout>
+               AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
 
-            <compat:AbsoluteLayout>
+            <AbsoluteLayout>
                 <StackLayout Margin="20"
-                     compat:AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     compat:AbsoluteLayout.LayoutFlags="All">
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All">
                     <Label Text="This might be a page of UI objects except that the only functional UI object on the page is a Button." />
                     <Button Text="Simulate 5-second work item"/>
                 </StackLayout>
 
                 <!-- Overlay -->
                 <ContentView x:Name="overlay"
-                     compat:AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     compat:AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All"
                      BackgroundColor="#C0808080"
                      IsVisible="False">
                     <ProgressBar
@@ -531,22 +530,22 @@
                          VerticalOptions="Center" />
 
                 </ContentView>
-            </compat:AbsoluteLayout>
+            </AbsoluteLayout>
 
-            <compat:AbsoluteLayout Margin="20">
+            <AbsoluteLayout Margin="20">
                 <BoxView Color="Silver"
-                 compat:AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
+                 AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
                 <BoxView Color="Silver"
-                 compat:AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
+                 AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
                 <BoxView Color="Silver"
-                 compat:AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
+                 AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
                 <BoxView Color="Silver"
-                 compat:AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
+                 AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
                 <Label Text="Stylish Header"
                FontSize="24"
-               compat:AbsoluteLayout.LayoutBounds="30, 25" />
+               AbsoluteLayout.LayoutBounds="0, 0, 30, 25" />
 
-                <Label compat:AbsoluteLayout.LayoutBounds="0, 80">
+                <Label AbsoluteLayout.LayoutBounds="0, 80, 0, 0">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Although " />
@@ -559,7 +558,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-            </compat:AbsoluteLayout>
+            </AbsoluteLayout>
 
             <Grid Margin="10, 0">
                 <Grid.RowDefinitions>
@@ -725,95 +724,7 @@
                HorizontalTextAlignment="Center" />
             </FlexLayout>
 
-            <compat:RelativeLayout>
-                <!-- Four BoxView's -->
-                <BoxView Color="Red"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" 
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" />
-                <BoxView Color="Green"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-40}"
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}" />
-                <BoxView Color="Blue"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=Constant, Constant=0}"
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-40}" />
-                <BoxView Color="Yellow"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-40}"
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-40}" />
-
-                <!-- Centered and 1/3 width and height of parent -->
-                <BoxView x:Name="oneThird" 
-                 Color="Silver"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}" 
-                 compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
-                 compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}" />
-
-                <!-- 1/3 width and height of previous -->
-                <BoxView Color="Black"
-                 compat:RelativeLayout.XConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=X}"
-                 compat:RelativeLayout.YConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Y}"
-                 compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Width, Factor=0.33}"
-                 compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToView, ElementName=oneThird, Property=Height, Factor=0.33}" />
-            </compat:RelativeLayout>
-
-            <compat:RelativeLayout>
-                <StackLayout Margin="20">
-                    <Label Text="This might be a page of UI objects except that the only functional UI object on the page is a Button." />
-                    <Button Text="Simulate 5-second work item" />
-                </StackLayout>
-
-                <!-- Overlay -->
-                <ContentView x:Name="overlay2"
-                     BackgroundColor="#C0808080"
-                     IsVisible="False"
-                     compat:RelativeLayout.WidthConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
-                     compat:RelativeLayout.HeightConstraint="{compat:ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
-                    <ProgressBar x:Name="progressBar2"
-                         Margin="20"
-                         VerticalOptions="Center" />
-                </ContentView>
-            </compat:RelativeLayout>
-
-            <compat:RelativeLayout Margin="20">
-                <BoxView Color="Silver"
-                 compat:RelativeLayout.XConstraint="0"
-                 compat:RelativeLayout.YConstraint="10"
-                 compat:RelativeLayout.WidthConstraint="200"
-                 compat:RelativeLayout.HeightConstraint="5" />
-                <BoxView Color="Silver"
-                 compat:RelativeLayout.XConstraint="0"
-                 compat:RelativeLayout.YConstraint="20"
-                 compat:RelativeLayout.WidthConstraint="200"
-                 compat:RelativeLayout.HeightConstraint="5" />
-                <BoxView Color="Silver"
-                 compat:RelativeLayout.XConstraint="10"
-                 compat:RelativeLayout.YConstraint="0"
-                 compat:RelativeLayout.WidthConstraint="5"
-                 compat:RelativeLayout.HeightConstraint="65" />
-                <BoxView Color="Silver"
-                 compat:RelativeLayout.XConstraint="20"
-                 compat:RelativeLayout.YConstraint="0"
-                 compat:RelativeLayout.WidthConstraint="5"
-                 compat:RelativeLayout.HeightConstraint="65" />
-                <Label Text="Stylish header"
-               FontSize="24"
-               compat:RelativeLayout.XConstraint="30"
-               compat:RelativeLayout.YConstraint="25" />
-                <Label compat:RelativeLayout.XConstraint="0"
-               compat:RelativeLayout.YConstraint="80">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Although " />
-                            <Span Text="RelativeLayout"
-                          FontAttributes="Italic" />
-                            <Span Text=" is usually employed for purposes other than the display of text using a " />
-                            <Span Text="Label"
-                          FontAttributes="Italic" />
-                            <Span Text=", obviously it can be used in that way. The text continues to wrap nicely within the bounds of the container and any margin that might be applied." />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </compat:RelativeLayout>
+            
             
             <!-- XCT -->
             
